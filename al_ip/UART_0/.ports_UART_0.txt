@@ -1,0 +1,10 @@
+clk; 1
+rst_n; 1
+rx_vld; 1
+rx_data; 1
+rx_err; 1
+rxd; 1
+tx_rdy; 1
+tx_en; 1
+tx_data; 1
+txd; 1

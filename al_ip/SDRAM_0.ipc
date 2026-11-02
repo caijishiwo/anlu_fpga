@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SDRAMConfig>
+    <GeneralConfig>
+        <Device>EG4S20BG256</Device>
+        <IP_ID>51</IP_ID>
+        <Type>EG_PHY_SDRAM</Type>
+        <Version>1.0</Version>
+        <create_VHDL>true</create_VHDL>
+        <inst>SDRAM_0</inst>
+    </GeneralConfig>
+    <GeneratedFiles>
+        <VHDL Enable="false">SDRAM_0.vhd</VHDL>
+        <Verilog Enable="true">SDRAM_0.v</Verilog>
+    </GeneratedFiles>
+</SDRAMConfig>

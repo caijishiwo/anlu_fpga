@@ -1,0 +1,4 @@
+CLK_DIV_NUM; 1; 27
+DATA_BIT; 1; 8
+PARITY_BIT; 1; "None"
+STOP_BIT; 1; "1"

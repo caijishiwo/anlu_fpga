@@ -1,0 +1,6 @@
+DATA_BIT : 8 : U : En : 5;;6;;7;;8 : 5 : 8
+PARITY_BIT : None : U : En : None;;Even;;Odd :  : 
+STOP_BIT : 1 : U : En : 1;;1.5;;2 :  : 
+Baud_Rate : 115200 : U : En :  :  : 
+Sys_Clk_Rate : 50000000 : U : En :  :  : 
+CLK_DIV_NUM : 27 : G : En :  :  : 

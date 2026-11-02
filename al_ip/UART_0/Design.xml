@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:vendor>anlogic.com</ipxact:vendor>
+    <ipxact:library>customized</ipxact:library>
+    <ipxact:name>design_UART_0</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>uart_477e91eaaa73_Inst</ipxact:instanceName>
+            <ipxact:componentRef vendor="anlogic.com" library="ip" name="UART" version="1.0"/>
+            <ipxact:configurableElementValues>
+                <ipxact:configurableElementValue referenceId="DATA_BIT">8</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="PARITY_BIT">&quot;None&quot;</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="STOP_BIT">&quot;1&quot;</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Baud_Rate">115200</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="Sys_Clk_Rate">50000000</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="CLK_DIV_NUM">27</ipxact:configurableElementValue>
+            </ipxact:configurableElementValues>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>clk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="clk"/>
+                <ipxact:externalPortReference portRef="clk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>rst_n</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="rst_n"/>
+                <ipxact:externalPortReference portRef="rst_n"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>rx_vld</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="rx_vld"/>
+                <ipxact:externalPortReference portRef="rx_vld"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>rx_data</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="rx_data"/>
+                <ipxact:externalPortReference portRef="rx_data"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>rx_err</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="rx_err"/>
+                <ipxact:externalPortReference portRef="rx_err"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>rxd</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="rxd"/>
+                <ipxact:externalPortReference portRef="rxd"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tx_rdy</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="tx_rdy"/>
+                <ipxact:externalPortReference portRef="tx_rdy"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tx_en</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="tx_en"/>
+                <ipxact:externalPortReference portRef="tx_en"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>tx_data</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="tx_data"/>
+                <ipxact:externalPortReference portRef="tx_data"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>txd</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="uart_477e91eaaa73_Inst" portRef="txd"/>
+                <ipxact:externalPortReference portRef="txd"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+    <ipxact:vendorExtensions>
+        <anlogic:device>EG4S20BG256</anlogic:device>
+        <anlogic:displayname>UART</anlogic:displayname>
+        <anlogic:ipGenVersion value="168007 2025/07/10">1.0</anlogic:ipGenVersion>
+    </ipxact:vendorExtensions>
+</ipxact:design>
